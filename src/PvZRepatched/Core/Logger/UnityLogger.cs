@@ -7,6 +7,7 @@ using UnityEngine;
 internal static class UnityLogger
 {
     private static readonly IReadOnlyCollection<string> IgnoredMessages = [
+        "RenderGraph is now disabled.",
         "Tween's 'endValue' equals to the current animated value:",
         "Tween is started on GameObject that is not active in hierarchy:",
         "Unloading the last loaded scene Assets/Scenes/Gameplay.unity(build index: -1), is not supported.",
