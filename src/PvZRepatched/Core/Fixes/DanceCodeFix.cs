@@ -1,11 +1,8 @@
 ﻿namespace PvZRepatched.Fixes;
 
-using HarmonyLib;
-
 using Il2CppReloaded;
 using Il2CppReloaded.Binders;
 using Il2CppReloaded.DataModels;
-using Il2CppReloaded.Services;
 
 using Il2CppTekly.DataModels.Binders;
 using Il2CppTekly.DataModels.Models;
@@ -16,7 +13,6 @@ using MelonLoader;
 using UnityEngine;
 using UnityEngine.UI;
 
-[HarmonyPatch(typeof(UserService), nameof(UserService.GetDanceModeAvailable))]
 internal static class DanceCodeFix
 {
     public static void Apply(string sceneName)
