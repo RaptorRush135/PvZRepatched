@@ -2,10 +2,12 @@
 
 using MelonLoader;
 
+using PvZRepatched.Fixes;
+
 public sealed class Core : MelonMod
 {
-    public override void OnInitializeMelon()
+    public override void OnSceneWasLoaded(int buildIndex, string sceneName)
     {
-        this.LoggerInstance.Msg("Hello world!");
+        DanceCodeFix.Apply(sceneName);
     }
 }
