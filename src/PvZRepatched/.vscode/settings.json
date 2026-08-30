@@ -1,0 +1,53 @@
+{
+    "editor.formatOnSave": true,
+    "files.exclude": {
+        "**/bin": true,
+        "**/obj": true,
+        "**/.vs": true
+    },
+    "search.exclude": {
+        "**/bin": true,
+        "**/obj": true
+    },
+    "editor.rulers": [
+        120
+    ],
+    "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "fullSolution",
+    "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "fullSolution",
+    "statusbar_command.commands": [
+        {
+            "text": "$(gear) Build",
+            "command": "workbench.action.tasks.build"
+        }
+    ],
+    "workbench.colorTheme": "Visual Studio 2019 Dark",
+    // https://github.com/microsoft/vscode/blob/main/extensions/theme-defaults/themes/2026-dark.json
+    "workbench.colorCustomizations": {
+        "editor.background": "#121314",
+        "editor.foreground": "#BBBEBF",
+        "sideBar.background": "#191A1B",
+        "sideBar.foreground": "#bfbfbf",
+        "sideBar.border": "#2A2B2CFF",
+        "sideBarTitle.foreground": "#bfbfbf",
+        "activityBar.background": "#191A1B",
+        "activityBar.foreground": "#bfbfbf",
+        "activityBar.inactiveForeground": "#8C8C8C",
+        "activityBar.border": "#2A2B2CFF",
+        "activityBar.activeBorder": "#bfbfbf",
+        "activityBar.activeFocusBorder": "#3994BCB3",
+        "activityBarBadge.background": "#3994BC",
+        "activityBarBadge.foreground": "#FFFFFF",
+        "activityBarTop.activeBorder": "#bfbfbf",
+        "titleBar.activeBackground": "#191A1B",
+        "titleBar.activeForeground": "#8C8C8C",
+        "titleBar.inactiveBackground": "#191A1B",
+        "titleBar.inactiveForeground": "#8C8C8C",
+        "titleBar.border": "#2A2B2CFF",
+        "statusBar.background": "#191A1B",
+        "statusBar.foreground": "#8C8C8C",
+        "statusBar.border": "#2A2B2CFF",
+        "statusBar.focusBorder": "#3994BCB3",
+        "statusBar.debuggingBackground": "#3994BC",
+        "statusBar.debuggingForeground": "#FFFFFF"
+    }
+}

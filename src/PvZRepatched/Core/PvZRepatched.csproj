@@ -1,0 +1,20 @@
+﻿<Project Sdk="RaptorRush135.PvZR.Sdk">
+
+  <PropertyGroup>
+    <IsModBuild>true</IsModBuild>
+    <ModMelonType>$(RootNamespace).Core</ModMelonType>
+    <ModColor>255, 0, 200, 0</ModColor>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
+    <MinVerDefaultPreReleaseIdentifiers>dev</MinVerDefaultPreReleaseIdentifiers>
+  </PropertyGroup>
+
+  <Target Name="EnableZipVersionDotReplacementForStableRelease" AfterTargets="MinVer" Condition="'$(MinVerPreRelease)' == ''">
+    <PropertyGroup>
+      <ModZipReplaceVersionDots>true</ModZipReplaceVersionDots>
+    </PropertyGroup>
+  </Target>
+
+</Project>

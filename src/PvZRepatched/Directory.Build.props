@@ -1,0 +1,13 @@
+<Project>
+
+  <PropertyGroup>
+    <ModAuthor>RaptorRush</ModAuthor>
+    <ModDownloadLink>TODO</ModDownloadLink>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsModBuild>false</IsModBuild>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+</Project>
