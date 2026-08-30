@@ -6,6 +6,8 @@ using UnityEngine;
 
 internal static class UnityLogger
 {
+    private const string MissingLocalizationPrefix = "Failed to find localization ID:";
+
     private static readonly IReadOnlyCollection<string> IgnoredMessages = [
         "RenderGraph is now disabled.",
         "Tween's 'endValue' equals to the current animated value:",
@@ -24,8 +26,7 @@ internal static class UnityLogger
 
         void LogMessageReceived(string condition, string stackTrace, LogType type)
         {
-            if (logMode == UnityLogMode.Filtered
-                && !ShouldLog(condition))
+            if (!ShouldLog(condition))
             {
                 return;
             }
@@ -50,18 +51,13 @@ internal static class UnityLogger
 
         bool ShouldLog(string condition)
         {
-            if (IgnoredMessages.Any(condition.StartsWith))
+            if (condition.StartsWith(MissingLocalizationPrefix))
             {
-                return false;
+                return logMissingLocalization;
             }
 
-            if (!logMissingLocalization
-                && condition.StartsWith("Failed to find localization ID:"))
-            {
-                return false;
-            }
-
-            return true;
+            return logMode != UnityLogMode.Filtered
+                || !IgnoredMessages.Any(condition.StartsWith);
         }
     }
 }

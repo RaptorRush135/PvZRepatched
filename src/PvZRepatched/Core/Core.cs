@@ -2,15 +2,24 @@
 
 using MelonLoader;
 
+using PvZRepatched.Environment;
+using PvZRepatched.Extensions;
 using PvZRepatched.Fixes;
 using PvZRepatched.Logger;
+using PvZRepatched.Metadata;
 
 internal sealed class Core : MelonMod
 {
     public override void OnInitializeMelon()
     {
-        // TODO: Read params from config
-        UnityLogger.Install(UnityLogMode.Filtered, false);
+        var environment = new ModEnvironment(ModInfo.Name);
+
+        FileInfo configurationFile = environment.ModUserDataDirectory.GetFile("configuration.json");
+        ModConfig config = ModConfig.DeserializeConfig(configurationFile);
+
+        this.LoggerInstance.Msg(config);
+
+        UnityLogger.Install(config.UnityLogMode, config.LogMissingLocalization);
     }
 
     public override void OnSceneWasLoaded(int buildIndex, string sceneName)
