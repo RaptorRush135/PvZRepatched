@@ -12,7 +12,7 @@ using PvZRepatched.Extensions;
 
 // Prevent seed packets costing more than 75 sun from being incorrectly greyed out during Versus plant selection
 [HarmonyPatch(typeof(SeedBankDataModel), nameof(SeedBankDataModel.IsChoosing), MethodType.Getter)]
-internal static class IsChoosingVersusPatch
+internal static class VersusSeedPacketsFix
 {
     [HarmonyPrefix]
     private static bool Prefix(SeedBankDataModel __instance, ref bool __result)
