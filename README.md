@@ -25,9 +25,27 @@
 4. Versus plant selection
     > Fix seed packets being incorrectly greyed out.
 
-# Unity logger
+## Unity logger
 
-* TODO
+The logger can be configured in the `PVZ Replanted\UserData\PvZRepatched\configuration.json` file.
+
+### Options
+
+| Option                   | Type    | Default    | Description                                 |
+|--------------------------|---------|------------|---------------------------------------------|
+| `UnityLogMode`           | Enum    | `Filtered` | Controls Unity logging verbosity            |
+| `LogMissingLocalization` | Boolean | `false`    | Enables logging of missing localization IDs |
+
+> [!NOTE]
+> **`LogMissingLocalization`** - Most users should keep this disabled as the vanilla game produces many localization warnings.
+>
+> Only enable this if you are debugging issues related to localization.
+
+### UnityLogMode Values
+
+- **`Disabled`** - Disables all Unity logging
+- **`Filtered`** - Filters out known noise and logs the rest
+- **`All`** - Logs all Unity messages without filtering
 
 ## 🚀 How to use
 
