@@ -11,6 +11,7 @@ using HarmonyLib;
 using Il2CppSteamworks;
 
 // Workaround for https://github.com/Facepunch/Facepunch.Steamworks/issues/802
+// Which causes random startup black screens
 [HarmonyPatch]
 internal static class SteamInitFix
 {
