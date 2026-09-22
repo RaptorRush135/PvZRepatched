@@ -1,6 +1,8 @@
 ﻿# 🌱 PvZRepatched
 
-> A mod for *Plants vs. Zombies™: Replanted* that fixes various vanilla bugs.
+> A mod for *Plants vs. Zombies™: Replanted* that fixes some vanilla bugs.
+>
+> Also includes a configurable Unity logger.
 
 ## 📦 Download
 
@@ -23,7 +25,7 @@
     > Remove extra spike height on certain tiles (Windows Phone leftover?).
 
 4. Versus plant selection
-    > Fix seed packets being incorrectly greyed out.
+    > Fix some seed packets being incorrectly greyed out.
 
 ## Unity logger
 
@@ -31,10 +33,10 @@ The logger can be configured in the `PVZ Replanted\UserData\PvZRepatched\configu
 
 ### Options
 
-| Option                   | Type    | Default    | Description                                 |
-|--------------------------|---------|------------|---------------------------------------------|
-| `UnityLogMode`           | Enum    | `Filtered` | Controls Unity logging verbosity            |
-| `LogMissingLocalization` | Boolean | `false`    | Enables logging of missing localization IDs |
+| Option                   | Type         | Default    | Description                                 |
+|--------------------------|--------------|------------|---------------------------------------------|
+| `UnityLogMode`           | UnityLogMode | `Filtered` | Controls Unity logging verbosity            |
+| `LogMissingLocalization` | Boolean      | `false`    | Enables logging of missing localization IDs |
 
 > [!NOTE]
 > **`LogMissingLocalization`** - Most users should keep this disabled as the vanilla game produces many localization warnings.
