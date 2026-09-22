@@ -1,0 +1,13 @@
+﻿PvZRepatched
+
+Licensed under the MIT License.
+Source code: https://github.com/RaptorRush135/PvZRepatched
+
+---
+
+Facepunch.Steamworks
+
+This project contains a backport of a bug fix from Facepunch.Steamworks.
+
+Licensed under the MIT License.
+Source code: https://github.com/Facepunch/Facepunch.Steamworks
