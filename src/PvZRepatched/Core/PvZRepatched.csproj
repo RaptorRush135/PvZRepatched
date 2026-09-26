@@ -7,11 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ModZipInclude Include="../../../README.md">
+      <ZipPath>Docs/PvZRepatched-README.md</ZipPath>
+    </ModZipInclude>
     <ModZipInclude Include="../../../LICENSE">
-      <ZipPath>Licenses/PvZRepatched-License.txt</ZipPath>
+      <ZipPath>Docs/PvZRepatched-License.txt</ZipPath>
     </ModZipInclude>
     <ModZipInclude Include="Attributions/*.txt">
-      <ZipPath>Licenses/%(Filename)%(Extension)</ZipPath>
+      <ZipPath>Docs/%(Filename)%(Extension)</ZipPath>
     </ModZipInclude>
   </ItemGroup>
 
