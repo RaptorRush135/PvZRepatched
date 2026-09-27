@@ -29,7 +29,7 @@
 
 ## Unity logger
 
-The logger can be configured in the `PVZ Replanted\UserData\PvZRepatched\configuration.json` file.
+Currently the logger cant be configured, this will be added later. 🚧
 
 ### Options
 
