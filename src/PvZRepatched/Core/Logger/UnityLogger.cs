@@ -31,7 +31,9 @@ internal static class UnityLogger
                 return;
             }
 
-            string text = $"[Unity] ({type}) {condition}\n{stackTrace}";
+            string cleanedStackTrace = CleanStackTrace(stackTrace);
+
+            string text = $"[Unity] ({type}) {condition}\n{cleanedStackTrace}";
 
             switch (type)
             {
@@ -58,6 +60,13 @@ internal static class UnityLogger
 
             return logMode != UnityLogMode.Filtered
                 || !IgnoredMessages.Any(condition.StartsWith);
+        }
+
+        string CleanStackTrace(string stackTrace)
+        {
+            return stackTrace.Replace(
+                " (at <00000000000000000000000000000000>:0)",
+                string.Empty);
         }
     }
 }
