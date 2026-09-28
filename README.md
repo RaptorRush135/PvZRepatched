@@ -2,11 +2,11 @@
 
 > A mod for *Plants vs. Zombies™: Replanted* that fixes some vanilla bugs.
 >
-> Also includes a configurable Unity logger.
+> Also includes a configurable (🚧) Unity logger.
 
 ## 📦 Download
 
-- [GameBanana](TODO)
+- [GameBanana](https://gamebanana.com/mods/721276)
 
 ## 🧩 Requirements
 
@@ -27,7 +27,15 @@
 4. Versus plant selection
     > Fix some seed packets being incorrectly greyed out.
 
-## Unity logger
+## ⚙️ Extra features
+
+1. Run in background
+    > Allows the game to continue running even when the window is not in focus.
+
+2. Unity logger
+    > Redirects Unity engine logs to the MelonLoader console for easier debugging.
+
+## 📝 Unity logger
 
 Currently the logger cant be configured, this will be added later. 🚧
 
