@@ -19,13 +19,13 @@
     > Sometimes the Steam API failed to initialize.
 
 2. Dance mode
-    > Restore the missing dance mode option. If you have unlocked it, you can now enable it from gameplay options.
+    > Restored the missing dance mode option. If you have unlocked it, you can now enable it from gameplay options.
 
 3. Spike plant height
-    > Remove extra spike height on certain tiles (Windows Phone leftover?).
+    > Removed the extra spike height on certain tiles (Windows Phone leftover?).
 
 4. Versus plant selection
-    > Fix some seed packets being incorrectly greyed out.
+    > Fixed some seed packets being incorrectly greyed out.
 
 ## ⚙️ Extra features
 
