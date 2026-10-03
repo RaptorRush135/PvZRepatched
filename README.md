@@ -27,6 +27,9 @@
 4. Versus plant selection
     > Fixed some seed packets being incorrectly greyed out.
 
+5. Plants turning gray after loading a save
+    > Fixed normal plants randomly turning into gray Imitater versions after saving and resuming.
+
 ## ⚙️ Extra features
 
 1. Run in background
