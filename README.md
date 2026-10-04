@@ -30,6 +30,9 @@
 5. Plants turning gray after loading a save
     > Fixed normal plants randomly turning into gray Imitater versions after saving and resuming.
 
+6. Pumpkin damage stages
+    > Pumpkins now show their first damage stage exactly when they can be repaired with First Aid.
+
 ## ⚙️ Extra features
 
 1. Run in background
