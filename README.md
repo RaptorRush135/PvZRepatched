@@ -33,6 +33,9 @@
 6. Pumpkin damage stages
     > Pumpkins now show their first damage stage exactly when they can be repaired with First Aid.
 
+7. Button responsiveness
+    > Shovel, Tree Food and Zen Garden buttons now register as soon as you press them, instead of waiting for you to release.
+
 ## ⚙️ Extra features
 
 1. Run in background
