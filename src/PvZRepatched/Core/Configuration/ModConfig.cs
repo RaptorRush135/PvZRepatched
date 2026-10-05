@@ -94,7 +94,9 @@ internal static class ModConfig
 
     private sealed record DefaultModConfig : IModConfig
     {
+#pragma warning disable CS0067
         public event Action<bool>? OnRunInBackgroundChanged;
+#pragma warning restore CS0067
 
         public bool RunInBackground => Defaults.RunInBackground;
 
