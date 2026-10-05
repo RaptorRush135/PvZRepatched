@@ -2,7 +2,7 @@
 
 > A mod for *Plants vs. Zombies™: Replanted* that fixes some vanilla bugs.
 >
-> Also includes a configurable (🚧) Unity logger.
+> Also includes a configurable Unity logger.
 
 ## 📦 Download
 
@@ -39,14 +39,14 @@
 ## ⚙️ Extra features
 
 1. Run in background
-    > Allows the game to continue running even when the window is not in focus.
+    > Allows the game to continue running even when the window is not in focus (configurable, enabled by default).
 
 2. Unity logger
     > Redirects Unity engine logs to the MelonLoader console for easier debugging.
 
 ## 📝 Unity logger
 
-Currently the logger cant be configured, this will be added later. 🚧
+Configurable with [BloomEngine](https://github.com/PalmForest0/BloomEngine) (v0.4.1-beta) (optional).
 
 ### Options
 

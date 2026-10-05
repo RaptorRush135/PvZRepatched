@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!--v0.4.1-beta-->
+    <Reference Include="$(PvzReDir)/Mods/BloomEngine.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ModZipInclude Include="../../../README.md">
       <ZipPath>Docs/PvZRepatched-README.md</ZipPath>
     </ModZipInclude>

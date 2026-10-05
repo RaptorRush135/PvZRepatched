@@ -2,6 +2,8 @@
 
 using MelonLoader;
 
+using PvZRepatched.Configuration;
+
 using UnityEngine;
 
 internal static class UnityLogger
@@ -15,13 +17,8 @@ internal static class UnityLogger
         "Unloading the last loaded scene Assets/Scenes/Gameplay.unity(build index: -1), is not supported.",
     ];
 
-    public static void Install(UnityLogMode logMode, bool logMissingLocalization)
+    public static void Install(IModConfig config)
     {
-        if (logMode == UnityLogMode.Disabled)
-        {
-            return;
-        }
-
         Application.add_logMessageReceived((Application.LogCallback)LogMessageReceived);
 
         void LogMessageReceived(string condition, string stackTrace, LogType type)
@@ -53,12 +50,17 @@ internal static class UnityLogger
 
         bool ShouldLog(string condition)
         {
-            if (condition.StartsWith(MissingLocalizationPrefix))
+            if (config.UnityLogMode == UnityLogMode.Disabled)
             {
-                return logMissingLocalization;
+                return false;
             }
 
-            return logMode != UnityLogMode.Filtered
+            if (condition.StartsWith(MissingLocalizationPrefix))
+            {
+                return config.LogMissingLocalization;
+            }
+
+            return config.UnityLogMode != UnityLogMode.Filtered
                 || !IgnoredMessages.Any(condition.StartsWith);
         }
 
