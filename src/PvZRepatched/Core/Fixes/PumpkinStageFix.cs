@@ -81,10 +81,9 @@ internal static class PumpkinStageFix
         }
 
         [HarmonyFinalizer]
-        private static Exception? Finalizer(Exception? __exception)
+        private static void Finalizer()
         {
             inPumpkinAnimate = false;
-            return __exception;
         }
     }
 
