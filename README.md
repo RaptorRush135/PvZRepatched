@@ -37,7 +37,7 @@
     > Shovel, Tree Food and Zen Garden buttons now register as soon as you press them, instead of waiting for you to release.
 
 8. Split Pea animation
-    > Fixed the Split Pea's front head snapping back to the start of its idle animation.
+    > Fixed the Split Pea's front head snapping back to the start of its idle animation and its back head getting stuck on the last frame of its shooting animation.
 
 ## ⚙️ Extra features
 

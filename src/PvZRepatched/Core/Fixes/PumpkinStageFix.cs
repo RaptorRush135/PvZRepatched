@@ -20,7 +20,7 @@ using Il2CppReloaded.Gameplay;
  *
  * Board.CanPlantAt only allows First Aid repair below 2/3 of max (~66.66%),
  * so a pumpkin between ~66.6% and 75% looked damaged but could not be repaired.
-*/
+ */
 [HarmonyPatch]
 internal static class PumpkinStageFix
 {
