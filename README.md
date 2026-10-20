@@ -39,6 +39,9 @@
 8. Split Pea animation
     > Fixed the Split Pea's front head snapping back to the start of its idle animation and its back head getting stuck on the last frame of its shooting animation.
 
+9. Peashooter family animation speed
+    > Fixed Peashooter, Snow Pea, Repeater, Leftpeater and Gatling Pea idle animations playing slower than in the original game.
+
 ## ⚙️ Extra features
 
 1. Run in background
