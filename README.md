@@ -42,6 +42,9 @@
 9. Peashooter family animation speed
     > Fixed Peashooter, Snow Pea, Repeater, Leftpeater and Gatling Pea idle animations playing slower than in the original game.
 
+10. Starfruit stars hitting the zombie eating it
+    > Fixed all five stars hitting a zombie that was right next to the plant, instead of only the stars that fly toward it.
+
 ## ⚙️ Extra features
 
 1. Run in background
