@@ -45,8 +45,11 @@
 10. Starfruit stars hitting the zombie eating it
     > Fixed all five stars hitting a zombie that was right next to the plant, instead of only the stars that fly toward it.
 
-10. Projectiles hitting more than once
+11. Projectiles hitting more than once
     > Fixed projectiles that had already hit a zombie still being processed afterwards and registering extra hits.
+
+12. Cob Cannon shots blocked by coins
+    > Fixed Cob Cannon shots not firing when a coin was under the cursor. Coins are now ignored while aiming, as in the original game.
 
 ## ⚙️ Extra features
 
